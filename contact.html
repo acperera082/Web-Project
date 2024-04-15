@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perera Furniture About</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='stylescontact.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <form class="searchbutton" action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    
+   <hr>
+    <div class="topnav">
+        <div class="logo">
+            <a href="home.html"><img src="./logo.png" alt=""></a>
+        </div>
+            <a href="home.html">Home</a>
+            <a href="#product">Product</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a class="active" href="#contact">Contact</a>
+    </div>
+    <hr>
+<br>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./c1.jpg" style="width:100%">
+            <div class="text">CONTACT US</div>
+            <div class="text1"><b>Perera Furniture , Sri Lanka</b></div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./c2.jpg" style="width:100%">
+            <div class="text">CONTACT US</div>
+            <div class="text1"><b>Perera Furniture , Sri Lanka</b></div>
+        </div>
+                
+        <div class="mySlides fade">
+            <img src="./c3.jpg" style="width:100%">
+            <div class="text">CONTACT US</div>
+            <div class="text1"><b>Perera Furniture , Sri Lanka</b></div>
+        </div>
+    </div>
+
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000);
+        }
+    </script>
+
+    <h3>Contact Us</h3>
+    <h4>Fill this out so that we can learn more about your requirements.</h4>
+
+
+<div class="row">
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+            <label for="district">District</label>                <select id="district" name="district">
+          <option value="Colombo">Colombo</option>
+          <option value="Gampaha">Gampaha</option>
+          <option value="Kalutara">Kalutara</option>
+          <option value="Kandy">Kandy</option>
+          <option value="Matale">Matale</option>
+          <option value="Nuwara Eliya">Nuwara Eliya</option>
+          <option value="Galle">Galle</option>
+          <option value="Matara">Matara</option>
+          <option value="Hambantota">Hambantota</option>
+          <option value="Jaffna">Jaffna</option>
+          <option value="Kilinochchi">Kilinochchi</option>
+          <option value="Mannar">Mannar</option>
+          <option value="Vavuniya">Vavuniya</option>
+          <option value="Mullaitivu">Mullaitivu</option>
+          <option value="Batticaloa">Batticaloa</option>
+          <option value="Ampara">Ampara</option>
+          <option value="Trincomalee">Trincomalee</option>
+          <option value="Kurunegala">Kurunegala</option>
+          <option value="Puttalam">Puttalam</option>
+          <option value="Anuradhapura">Anuradhapura</option>
+          <option value="Polonnaruwa">Polonnaruwa</option>
+          <option value="Badulla">Badulla</option>
+          <option value="Moneragala">Moneragala</option>
+          <option value="Ratnapura">Ratnapura</option>
+          <option value="Kegalle">Kegalle</option>
+          
+            </select>
+    
+            <label for="Inquiry">Inquiry</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="right">
+        <h5>Total Interior Solutions</h5>
+        <h6>Address</h6>
+        <p>Perera Furniture ,<br>Nawinna Road ,<br>Dehenaggama ,<br>Wariyapola </p>
+        <h6>Email</h6>
+        <p>pererafurniture@gmmail.com</p>
+        <h6>Contact</h6>
+        <p>Contact Person : Chaminda Perera<br>+94 724058470<br>+94 776261896</p>
+
+    </div>
+</div>
+
+<div class="row1">
+    <div class="leftphoto">
+        <img class="chair" src="./product-2.png">
+    </div>
+
+    <div class="newslatter">
+        <form action="/action_page.php">
+            <div class="container1">
+              <h3>Subscribe to our Newsletter</h3>
+              <h2>Subscribe to our newsletter for the latest furniture design updates and promotions</h2>
+              <input type="text" placeholder="Name" name="name" required>
+              <input type="text" placeholder="Email address" name="mail" required>
+              <label>
+                <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+              </label>
+              <input type="submit" value="Subscribe">
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <img class="footerimage" src="./logo.png">
+    <h1>Create lasting memories in your home with our timeless furniture designs.<br>
+    <a href="mailto:pererafurniture@gmail.com">pererafurniture@gmail.com</a></h1>
+</footer>
+
+
+</body>
+</html>
