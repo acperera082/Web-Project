@@ -85,23 +85,27 @@ hr{
 
 .text1 {
     color: #ffffae;
-    font-size: 20px;
-    padding: 40px 12px;
+    font-size: 40px;
+    padding: 50px 15px;
     position: absolute;
-    bottom: 320px;
+    bottom: 450px;
     width: 100%;
     text-align: left;
     margin-left: 15%;
+    text-shadow: 0px 1px 1px black;
+
 }
 .text {
     color: #ffffae;
-    font-size: 40px;
+    font-size: 80px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 200px;
+    bottom: 300px;
     width: 100%;
     text-align: left;
     margin-left: 15%;
+    text-shadow: 0px 1px 1px black;
+
 }
 
 .text-block {
@@ -147,6 +151,7 @@ h1{
     text-align: center;
     font-size: 45px;
     color: #030303b6;
+
 }
 
 .vl {
@@ -303,7 +308,7 @@ h2{
 h4{
     text-align: center;
     font-size: 30px;
-    color: #030303b6;
+    color: #717171;
     border: #e9c03a;
     border-color: #d3a202;
  } 
@@ -344,4 +349,18 @@ footer p{
 
 ::-webkit-scrollbar-thumb:hover {
   background:#ffffae; 
+}
+html{
+  scroll-behavior: smooth;
+}
+.arrow{
+  position: fixed;
+  background-color: #e9c03a;
+  border-radius: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
 }
